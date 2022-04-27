@@ -4,13 +4,15 @@ import Login from './components/Login/Login';
 import Cliente from './components/Pages/Cliente';
 import Proveedor from './components/Pages/Proveedor';
 import NoPage from './components/Pages/NoPage';
-// import UserContextProvide from './context/UserContext'
+import Adm from './components/ADM/Adm';
+
 
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="proveedor" element={<Proveedor />} />
           <Route path="cliente" element={<Cliente />} />
+          <Route path="adm" element={<Adm />} />
           <Route path="*" element={<NoPage />} />
 
         </Routes>
